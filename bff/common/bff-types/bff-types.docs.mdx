@@ -1,0 +1,22 @@
+---
+description: 'A set of shared types between BFF (service and client app)'
+labels: ['shared types', 'type', 'typescript']
+---
+# The shared types between the service and the client
+This module only contains type definitions that are shared between both the service and the client application (react app).
+
+The types for this example are quite basic:
+
+```typescript 
+
+type PersonType = {
+    name: string,
+    age: number,
+    address: string
+}
+
+type ServiceResponseType = PersonType[]
+
+export {ServiceResponseType, PersonType}
+```
+

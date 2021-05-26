@@ -1,0 +1,21 @@
+---
+description: 'A sample service to demostrat the BFF patter'
+labels: ['node.js', 'service']
+---
+This service returns a list of items everytime a request is made.
+The type definition for the response can be found at `@deleteman/bff.bff-types`
+
+# Example request
+
+```
+$ curl http://localhost:8000
+```
+
+# Using the module
+All that is required to start the sample server is the following code:
+
+```javascript
+const service = require('@deleteman/bff.service')
+
+service.service.newServer()
+```

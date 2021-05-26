@@ -1,0 +1,23 @@
+---
+description: 'A ClientApp component for the BFF pattern'
+labels: ['react', 'bff', 'client']
+---
+
+import { ClientApp } from './client-app';
+
+## React Component that renders a list of people
+
+This component is rendering a list of people elements returned by a very tailored service. 
+The types for the response can be found here: `@deleteman/bff.bff-types`
+
+### Component usage
+```js
+<ClientApp />
+```
+
+### Showing the results if the test server is up & running
+
+Modify the text to see it change live:
+```js live
+<ClientApp defaultMessage="No data found" />
+```
